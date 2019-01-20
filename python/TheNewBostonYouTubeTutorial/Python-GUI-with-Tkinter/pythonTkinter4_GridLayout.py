@@ -4,17 +4,17 @@ from tkinter import *
 """ Add a basic window with close sign, minimize, and maximize (Main Window)"""
 root = Tk()
 
-userNamePrompt = label(root, Text="Enter Username")
-passwordPrompt = label(root, Text="Enter Password")
+label_1 = Label(root, Text="Enter Username") """ userNamePrompt """
+label_2= Label(root, Text="Enter Password") """ passwordPrompt """
 
-userNameField = entry(root)
-passwordField = entry(root)
+entry_1 = Entry(root) """ userNameField """
+entry_2 = Entry(root) """ passwordField """
 
-userNamePrompt.grid(row=0)
-passwordPrompt.grid(row=1)
+label_1.grid(row=0) """ userNamePrompt """
+label_2.grid(row=1) """ passwordPrompt """
 
-userNameField.grid(row=0,column=1)
-passwordPrompt.grid(row=1,column=1)
+entry_1.grid(row=0,column=1) """ userNameField """
+entry_2.grid(row=1,column=1) """ passwordPrompt """
 
 """ Enable the Main Window to stay on the screen """
 root.mainloop()
