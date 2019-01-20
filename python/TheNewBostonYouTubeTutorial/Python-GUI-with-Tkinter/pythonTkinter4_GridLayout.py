@@ -10,8 +10,8 @@ passwordPrompt = Label(root, text="Enter Password")
 userNameField = Entry(root)
 passwordField = Entry(root)
 
-label_1.grid(row=0) """ userNamePrompt """
-label_2.grid(row=1) """ passwordPrompt """
+userNamePrompt.grid(row=0)
+passwordPrompt.grid(row=1)
 
 userNameField.grid(row=0, column=1)
 passwordField.grid(row=1, column=1)
