@@ -1,2 +1,4 @@
-python/TheNewBostonYouTubeTutorial/.vscode/settings.json
+.idea
+__pycache__
 .vscode
+venv*
