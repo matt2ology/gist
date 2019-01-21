@@ -3,31 +3,36 @@ from tkinter import *
 # Binding a function to a widget
 
 """ Add a basic window with close sign, minimize, and maximize (Main Window)"""
-root = Tk()
+window_1 = Tk(className="window_1")
+window_2 = Tk(className="window_2")
 
 ##############
 # METHOD ONE #
 ##############
-""" 
+
+
 def printName():
     print("Your waifu sucks!")
 
-button_1 = Button(root, text="A message for you.", command=printName)
+
+button_1 = Button(window_1, text="A message for you.", command=printName)
 button_1.pack()
- """
+
 ##############
 # METHOD TWO #
 ##############
 
 
 def printName(event):
-    print("Your waifu sucks!")
+    print("No, your waifu sucks!")
 
 
-button_1 = Button(root, text="A message for you.")
+button_1 = Button(window_2, text="A message for you.")
+
 """ <Button-1> is the left mouse click """
 button_1.bind("<Button-1>", printName)
 button_1.pack()
 
 """ Enable the Main Window to stay on the screen """
-root.mainloop()
+window_1.mainloop()
+window_2.mainloop()
